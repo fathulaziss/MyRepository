@@ -21,6 +21,7 @@ public abstract class NewsDatabase extends RoomDatabase {
             synchronized (NewsDatabase.class) {
                 INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                 NewsDatabase.class, "News.db")
+                        .allowMainThreadQueries()
                         .build();
             }
         }

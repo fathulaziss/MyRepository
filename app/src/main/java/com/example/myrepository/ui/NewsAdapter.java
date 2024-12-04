@@ -20,11 +20,8 @@ import com.example.myrepository.utils.DateFormatter;
 
 public class NewsAdapter extends ListAdapter<NewsEntity, NewsAdapter.MyViewHolder> {
 
-    private final OnItemClickCallback onItemClickCallback;
-
-    public NewsAdapter(OnItemClickCallback onItemClickCallback) {
+    public NewsAdapter() {
         super(DIFF_CALLBACK);
-        this.onItemClickCallback = onItemClickCallback;
     }
 
     @NonNull
